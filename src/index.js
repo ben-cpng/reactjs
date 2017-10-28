@@ -7,18 +7,6 @@ import store, { history } from './store';
 import './index.css';
 import SearchApp from './components/SearchApp';
 
-/*
-render(
-    <Provider store={store}>
-      <ConnectedRouter history={history} >
-        <div>
-          <SearchApp />
-        </div>
-      </ConnectedRouter>
-    </Provider>,
-    document.getElementById('root')
-  )
-*/
 ReactDOM.render(
 <Provider store={store}>
       <ConnectedRouter history={history} >

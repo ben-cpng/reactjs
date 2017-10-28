@@ -1,7 +1,7 @@
 export const SEARCH = 'search/SEARCH';
 
 const initialState = {
-    isResult: false
+    isResult: "false"
 }
 
 export default (state = initialState, action) => {
@@ -9,16 +9,18 @@ export default (state = initialState, action) => {
         case SEARCH:
             return {
                 ...state,
-                isResult: true
+                isResult: "true"
             }
 
-            default:
-                return state
+        default:
+            return state
     }
 }
 
 export const search = () => {
     return dispatch => {
-        type: SEARCH
+        dispatch({
+            type: SEARCH
+        })        
     }
 }
